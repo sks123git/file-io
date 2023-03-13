@@ -1,6 +1,8 @@
 package org.employee;
 
-public class EmployeePayrollData {
+import java.io.Serializable;
+
+public class EmployeePayrollData implements Serializable {
     public int id;
     public String name;
     public double salary;
@@ -13,6 +15,6 @@ public class EmployeePayrollData {
 
     @Override
     public String toString() {
-        return "[ id: " + this.id + ", Name: "+ this.name + ", Salary: " + this.salary + " ]";
+        return "id: " + this.id + ", Name: "+ this.name + ", Salary: " + this.salary;
     }
 }
